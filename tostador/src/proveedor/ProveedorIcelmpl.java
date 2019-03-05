@@ -1,30 +1,23 @@
 package proveedor;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import proveedor.ServiceType;
-
-public class ProveedorMovistar implements Proveedor{
-	
-	private static final String PROVEDOR = "Soy el provedor Movistar";
-    private static final List<ServiceType> serviceList = new ArrayList<ServiceType>();
-    private static final Map<String, Double> customers = new HashMap<String, Double>();
+public class ProveedorIcelmpl implements Proveedor {
+    //immutable object 
+	private static final String PROVEDOR = "Soy el provedor ICE";
 
 	@Override
 	public void imprimir() {
 		System.out.println(PROVEDOR);
-		
 	}
 
 	@Override
 	public List<ServiceType> getServices() {
 		// TODO Auto-generated method stub
-		return serviceList;
+		return null;
 	}
-
+	
 	@Override
 	public void addServices(ServiceType serviceTypes) {
 		// TODO Auto-generated method stub
@@ -34,13 +27,12 @@ public class ProveedorMovistar implements Proveedor{
 	@Override
 	public Map<String, Double> getCustomer() {
 		// TODO Auto-generated method stub
-		return customers;
+		return null;
 	}
 
 	@Override
 	public void addCustomer(String name, Double amount) {
 		// TODO Auto-generated method stub
-		customers.put(name,amount);
+		
 	}
-
 }
