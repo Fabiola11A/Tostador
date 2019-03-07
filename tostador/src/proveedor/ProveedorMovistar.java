@@ -9,7 +9,7 @@ import proveedor.ServiceType;
 
 public class ProveedorMovistar implements Proveedor{
 	
-	private static final String PROVEDOR = "Soy el provedor Movistar";
+	private static final String PROVEDOR = "Soy el proveedor MOVISTAR";
     private static final List<ServiceType> serviceList = new ArrayList<ServiceType>();
     private static final Map<String, Double> customers = new HashMap<String, Double>();
 
@@ -27,7 +27,7 @@ public class ProveedorMovistar implements Proveedor{
 
 	@Override
 	public void addServices(ServiceType serviceTypes) {
-		// TODO Auto-generated method stub
+		serviceList.add(serviceTypes);
 		
 	}
 

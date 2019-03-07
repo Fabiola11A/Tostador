@@ -28,7 +28,7 @@ public class CustomerAndServices {
 		public void imprimirServices() {
 			for (ServiceType type : provedor.getServices()) {
 				System.out.print("servicio: " + type.getName() + ", ");
-				System.out.println("monto total: " + type.getName());
+				System.out.println("monto total: " + type.getTotalAmount());
 			}
 
 		}

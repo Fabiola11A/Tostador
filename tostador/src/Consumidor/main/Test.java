@@ -22,11 +22,22 @@ public class Test {
 		Tostador.imprimirProveedor();*/
 		
 		ProveedorMovistar movistar = new ProveedorMovistar();
+		movistar.imprimir();
 		movistar.addCustomer("Jorge", 100d);
 		movistar.addCustomer("Xinia", 200d);
 		movistar.addServices(Electricidad);
 		movistar.addServices(Telefonia);
+		movistar.addServices(Otras);
 		imprimirServicios(movistar);
+		
+		ProveedorIcelmpl ice= new ProveedorIcelmpl();
+		ice.imprimir();
+		ice.addCustomer("Maria", 100d);
+		ice.addCustomer("Pedro",200d);
+		ice.addServices(Electricidad);
+		ice.addServices(Telefonia);
+		ice.addServices(Otras);
+		imprimirServicios(ice);
 	}
 	
 	private static void imprimirServicios(Proveedor provedor) {
