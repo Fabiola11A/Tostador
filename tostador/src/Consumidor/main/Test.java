@@ -25,6 +25,7 @@ public class Test {
 		movistar.imprimir();
 		movistar.addCustomer("Jorge", 100d);
 		movistar.addCustomer("Xinia", 200d);
+		movistar.addCustomer("Luis",300d);
 		movistar.addServices(Electricidad);
 		movistar.addServices(Telefonia);
 		movistar.addServices(Otras);
